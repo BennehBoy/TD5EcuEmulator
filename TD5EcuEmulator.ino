@@ -487,7 +487,7 @@ void loop()
   }  
   
   /////////////////////////////////////////////////////////
-  //                       Fuelling 5                    //
+  //                       Fuelling 5   AAP                 //
   /////////////////////////////////////////////////////////
   if (iso_compare_data(dataResponse, dataStreamFuelling5, 4))
   {
@@ -503,7 +503,7 @@ void loop()
         remote_log_byte(dataStream[i]);
 #endif    
 #ifdef _LCD_
-    scrollLcd("Fuelling 5 request  ");
+    scrollLcd("F5 - AAP request    ");
 #endif    
     for (byte i = 0; i < dataIndex; i++)
     {
